@@ -13,3 +13,37 @@
  *= require_tree .
  *= require_self
  */
+
+.shuffle-btn {
+  border: 3px solid blue;
+  padding: 20px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.card {
+  border: 3px solid #666;
+  width: 75px;
+  height: 100px;
+  float: left;
+  margin: 20px 20px 0 0;
+  text-align: center;
+}
+
+.spade {
+  border: 3px solid #000;
+}
+
+.heart {
+  border: 3px solid red;
+}
+
+.diamond {
+  border: 3px solid #FFC0CB;
+}
+
+.club {
+  border: 3px solid #333;
+}

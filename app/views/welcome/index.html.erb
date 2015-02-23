@@ -1,0 +1,10 @@
+<h1>Hi! Here's your deck of cards</h1>
+
+<%= link_to 'Shuffle!', '', class: 'shuffle-btn' %>
+
+<% @deck.cards.each do |card| %>
+  <div class="card <%= card.suit.downcase %>">
+    <h4><%= card.rank %></h4>
+    <h5><%= card.suit %></h5>
+  </div>
+<% end %>
