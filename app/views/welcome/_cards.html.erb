@@ -1,0 +1,6 @@
+<% @deck.cards.each do |card| %>
+  <div class="card <%= card.suit.downcase %>">
+    <h4><%= card.rank %></h4>
+    <h5><%= card.suit %></h5>
+  </div>
+<% end %>
