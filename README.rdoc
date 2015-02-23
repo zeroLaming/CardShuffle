@@ -1,1 +1,30 @@
 == Card shuffle
+
+Challenge:
+
+Write a Rails app that allows users to shuffle a deck of cards and presents the result.
+
+Main problems:
+
+1. Generating 52 cards in an elegant, easy to understand fashion.
+
+A deck consists of cards 2 - 10, plus a Jack, Queen, King and an Ace.
+
+2. Card duplication
+
+We need to ensure that the the deck we produce doesn't have any duplicates.
+
+3. Shuffling
+
+We need to ensure that when we shuffle the deck the result is convincingly random.
+
+
+Solution:
+
+I'm not ashamed to admit I googled potential solutions for inspiration (as I would do for any real world problem), and two things jumped out at me:
+
+1. Mapping the numbers 0 - 51 to cards guarantees their uniqueness, and
+
+2. Making use of Array#shuffle makes a lot of sense for creating random decks.
+
+A solution outlined here (http://stackoverflow.com/a/2641421) elegantly solves the problem, so I've borrowed parts of it.
