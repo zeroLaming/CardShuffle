@@ -1,3 +1,7 @@
+<% if @deck.shuffled? %>
+  <p class="text-center">Your cards are shuffled!</p>
+<% end %>
+
 <% @deck.cards.each do |card| %>
   <div class="card <%= card.suit.downcase %>">
     <h4><%= card.rank %></h4>
