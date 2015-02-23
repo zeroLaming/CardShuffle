@@ -22,6 +22,7 @@ module CardShuffle
 
     def generate_cards
       (0..51).to_a.collect { |id| Card.new(id) }
+        .sort{ |a,b| [a.suit, a.rank] <=> [b.suit, b.rank] }
     end
   end
 end

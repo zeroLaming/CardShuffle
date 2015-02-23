@@ -8,8 +8,8 @@ module CardShuffle
       let(:deck) { Deck.new }
 
       it 'should be in order' do
-        expect(deck.cards[0].rank).to eq('2')
-        expect(deck.cards[0].suit).to eq('Spade')
+        expect(deck.cards[0].rank).to eq('10')
+        expect(deck.cards[0].suit).to eq('Club')
       end
 
       it "should know it isn't shuffled" do
